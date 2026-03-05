@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalisco School Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Jalisco School Finder</h1>
+    </header>
+
+    <section class="control-panel">
+        <div class="input-wrapper">
+            <label for="search-input">Nombre:</label>
+            <input type="text" id="search-input" placeholder="EJ: ADOLFO SANCHEZ VAZQUEZ...">
+        </div>
+        
+        <div class="input-wrapper">
+            <label for="muni-select">Municipio:</label>
+            <select id="muni-select">
+                <option value="">All</option>
+            </select>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="nivel-select">Nivel:</label>
+            <select id="nivel-select">
+                <option value="">All</option>
+            </select>
+        </div>
+
+        <button id="btn-search">Search</button>
+    </section>
+
+    <main id="results-grid" class="results-container">
+        </main>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

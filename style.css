@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    padding: 20px;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-header h1 {
+    color: #020509; 
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #00509d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #020609; 
+}
+
+.results-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; 
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd; 
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #010203;
+    text-transform: uppercase;
+}
+
+.card p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (min-width: 768px) {
+    .control-panel {
+        flex-direction: row; 
+        align-items: flex-end; 
+        justify-content: center;
+    }
+    
+    .input-wrapper {
+        flex: 1; 
+    }
+    
+    button {
+        margin-top: 0;
+        height: 42px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .results-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
